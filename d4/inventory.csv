@@ -1,0 +1,3 @@
+Name,Management IP,Username,Password,Description
+R1-Core,10.1.1.50,admin,cisco123,Core router handling WAN access and internal traffic
+SW-A,10.1.1.51,admin,cisco123,Access switch in Building A
