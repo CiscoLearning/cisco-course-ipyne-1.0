@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Network Device Console</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Network Console</a>
+  </nav>
+  <div class="container mt-4">
+    <h1 class="mb-4">Network Device Console</h1>
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <select id="device-select" class="form-control">
+          <option value="">Select a device</option>
+          {% for device in devices %}
+            <option value="{{ device }}">{{ device }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-2">
+        <button id="connect-btn" class="btn btn-primary btn-block">Connect</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
